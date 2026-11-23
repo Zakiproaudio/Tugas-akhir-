@@ -1,0 +1,551 @@
+
+/* =========================
+   DASAR WEBSITE
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f7f1;
+    color: #263b2d;
+    line-height: 1.7;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+header {
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    font-size: 35px;
+}
+
+.logo h2 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #244d35;
+}
+
+.logo small {
+    color: #82917e;
+    font-size: 11px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+}
+
+.nav-menu a {
+    color: #344b39;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #87a96b;
+}
+
+/* =========================
+   HERO / BERANDA
+========================= */
+.hero {
+    min-height: 620px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    background:
+        linear-gradient(
+            rgba(16, 42, 25, 0.48),
+            rgba(16, 42, 25, 0.55)
+        ),
+        url("https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=2000&q=90");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    max-width: 750px;
+    color: white;
+}
+
+.subtitle {
+    color: #e2d6a8;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-family: Georgia, serif;
+}
+
+.hero-description {
+    max-width: 600px;
+    color: #f0f0e9;
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+
+.btn {
+    display: inline-block;
+    background: #d6b878;
+    color: #253d2b;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   SECTION UMUM
+========================= */
+.section {
+    padding: 90px 8%;
+}
+
+.section-label {
+    color: #8b9d67;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-heading h2,
+.about-content h2,
+.life-content h2,
+.contact-box h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    line-height: 1.3;
+    color: #264632;
+    margin-bottom: 15px;
+}
+
+.section-heading > p:last-child {
+    color: #777e72;
+}
+
+/* =========================
+   TENTANG DESA
+========================= */
+.about {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 65px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    height: 420px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 15px 15px 0 #e5e8d9;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content p:not(.section-label) {
+    color: #73796f;
+    margin-bottom: 18px;
+}
+
+.text-link {
+    color: #567b48;
+    font-weight: bold;
+}
+
+/* =========================
+   WISATA / CARD
+========================= */
+.wisata {
+    background: #edf0e6;
+}
+
+.card-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.4s;
+    box-shadow: 0 8px 25px rgba(35, 60, 35, 0.07);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(35, 60, 35, 0.13);
+}
+
+.card img {
+    height: 240px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.tag {
+    display: inline-block;
+    color: #718d55;
+    background: #eef3e7;
+    padding: 5px 12px;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.card h3 {
+    margin: 12px 0;
+    color: #294632;
+    font-size: 21px;
+}
+
+.card p {
+    color: #7b8177;
+    font-size: 14px;
+}
+
+/* =========================
+   KEHIDUPAN DESA
+========================= */
+.life {
+    background:
+        linear-gradient(
+            rgba(248, 247, 241, 0.95),
+            rgba(248, 247, 241, 0.95)
+        ),
+        url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1500&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.life-content {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.life-content > p:not(.section-label) {
+    max-width: 750px;
+    margin: 0 auto 40px;
+    color: #747b70;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature {
+    padding: 30px 20px;
+    background: white;
+    border-radius: 16px;
+    border: 1px solid #e7eadf;
+    transition: 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature span {
+    font-size: 40px;
+}
+
+.feature h3 {
+    color: #34543a;
+    margin: 12px 0;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #7b8177;
+}
+
+/* =========================
+   GALERI
+========================= */
+.gallery {
+    background: #ffffff;
+}
+
+.gallery-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.gallery-container img {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 14px;
+    transition: 0.4s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.04);
+}
+
+/* =========================
+   KONTAK
+========================= */
+.contact {
+    background: #e9eee2;
+    text-align: center;
+}
+
+.contact-box {
+    max-width: 850px;
+    margin: auto;
+}
+
+.contact-box > p:not(.section-label) {
+    color: #73796f;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.social {
+    display: inline-block;
+    padding: 12px 22px;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.social:hover {
+    transform: translateY(-4px);
+    opacity: 0.85;
+}
+
+.whatsapp {
+    background: #25D366;
+}
+
+.facebook {
+    background: #1877F2;
+}
+
+.instagram {
+    background: #C13584;
+}
+
+.twitter {
+    background: #222222;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: #203d2b;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.footer-logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+footer p {
+    color: #c7d3c3;
+    font-size: 14px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #aab9a5;
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+@media screen and (max-width: 900px) {
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .nav-menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-image,
+    .about-content {
+        width: 100%;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .section {
+        padding: 60px 6%;
+    }
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .nav-menu {
+        gap: 12px;
+    }
+
+    .nav-menu a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 60px 7%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .section-heading h2,
+    .about-content h2,
+    .life-content h2,
+    .contact-box h2 {
+        font-size: 28px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .gallery-container img {
+        height: 170px;
+    }
+
+    .about-image img {
+        height: 280px;
+    }
+
+    .social {
+        width: 45%;
+        padding: 11px 8px;
+        font-size: 12px;
+    }
+      }
+  
